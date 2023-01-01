@@ -1,0 +1,17 @@
+function createEvents() {
+  const calendar = CalendarApp.getDefaultCalendar();
+
+
+  const title = '研修1回目';
+  
+  const startTime = new Date('2022/12/31 13:00:00');
+  const endTime = new Date('2022/12/31 15:00:00');
+
+  const option = {
+    description: 'イントロダクション',
+    location: 'daisuke'
+  }
+
+  calendar.createEvent(title, startTime, endTime, option);
+
+}
